@@ -1,0 +1,23 @@
+spreadsheet: data/leads.xlsx
+header_row: 3
+data_start_row: 4
+processed_fill: "FFFF00"
+
+base_url: "http://127.0.0.1:8000"
+
+locations:
+  NORTH: "/stores/north/new/"
+  SOUTH: "/stores/south/new/"
+  EAST: "/stores/east/new/"
+
+products:
+  DESK LAMP: desk-lamp
+  OFFICE CHAIR: office-chair
+  STANDING DESK: standing-desk
+  BOOKSHELF: bookshelf
+  MONITOR ARM: monitor-arm
+
+browser:
+  maximized: true
+  wait_seconds: 20
+  pause_after_submit: 2

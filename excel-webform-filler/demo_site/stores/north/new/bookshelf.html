@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bookshelf quote — Northside Store</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 520px; margin: 40px auto; }
+    label, input, select, textarea, button { display: block; width: 100%; margin-bottom: 12px; }
+    textarea { min-height: 80px; }
+    .pref { display: flex; gap: 8px; align-items: center; }
+    .pref input { width: auto; }
+  </style>
+</head>
+<body>
+  <h1>Northside Store</h1>
+  <h2>Quote request: Bookshelf</h2>
+  <form action="/thanks.html" method="get">
+    <label>Version
+      <select name="version">
+        <option>Standard</option>
+        <option>Plus</option>
+        <option>Premium</option>
+      </select>
+    </label>
+    <input name="name" placeholder="Full name" required>
+    <input name="phone" placeholder="Phone">
+    <input name="email" placeholder="Email" type="email">
+    <textarea name="notes" placeholder="Questions or notes"></textarea>
+    <div class="pref">
+      <input type="radio" name="contact_pref" value="email" id="pref-email">
+      <label for="pref-email">Email</label>
+    </div>
+    <div class="pref">
+      <input type="radio" name="contact_pref" value="whatsapp" id="pref-whatsapp">
+      <label for="pref-whatsapp">WhatsApp</label>
+    </div>
+    <div class="pref">
+      <input type="checkbox" name="privacy" id="privacy">
+      <label for="privacy">I agree to the privacy policy</label>
+    </div>
+    <button type="submit">Send quote request</button>
+  </form>
+</body>
+</html>

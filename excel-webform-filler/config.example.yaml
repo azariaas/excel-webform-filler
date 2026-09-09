@@ -1,0 +1,29 @@
+# Copy to config.yaml and adjust as needed.
+# Relative paths are resolved from the project root.
+
+spreadsheet: data/leads.xlsx
+header_row: 3
+data_start_row: 4
+processed_fill: "FFFF00"
+
+# Local demo site started with: python scripts/serve_demo.py
+base_url: "http://127.0.0.1:8000"
+
+# Each spreadsheet tab name must match a location key.
+locations:
+  NORTH: "/stores/north/new/"
+  SOUTH: "/stores/south/new/"
+  EAST: "/stores/east/new/"
+
+# Product name in the sheet → URL slug appended to the location path
+products:
+  DESK LAMP: desk-lamp
+  OFFICE CHAIR: office-chair
+  STANDING DESK: standing-desk
+  BOOKSHELF: bookshelf
+  MONITOR ARM: monitor-arm
+
+browser:
+  maximized: true
+  wait_seconds: 20
+  pause_after_submit: 2
